@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../organisms/Header';
+import Footer from '../organisms/Footer';
 import ProductList from '../organisms/ProductList';
 import { products } from '../../data/productsData';
 import { categories } from '../../data/categoriesData';
@@ -23,6 +24,7 @@ const HomeTemplate = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
