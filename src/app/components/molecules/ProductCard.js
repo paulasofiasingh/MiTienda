@@ -59,7 +59,7 @@ const ProductCard = ({ product }) => {
       {/* Solo renderiza la imagen si el arreglo de imágenes está presente */}
       {product.images && Array.isArray(product.images) && product.images.length > 0 && (
         <ImageAtom
-          src={product.images[currentImageIndex]} // Dynamically change the image
+          src={product.images[currentImageIndex]}
           alt={product.name}
           className="card-img-top"
           style={{ transition: 'opacity 0.3s ease-in-out' }}

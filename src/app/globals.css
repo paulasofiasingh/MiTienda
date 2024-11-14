@@ -50,3 +50,12 @@ body {
 .cart i {
   font-size: 1.5rem;
 }
+
+.logo a {
+  text-decoration: none; /* Quita el subrayado */
+}
+
+.navbar-nav {
+  margin-left: 2%; /* Para alinear los enlaces al centro/derecha */
+  padding-left: 1.5rem; /* Espaciado desde el borde izquierdo */
+}

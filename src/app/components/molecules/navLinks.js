@@ -1,25 +1,17 @@
 import React from 'react';
 
-const NavLinks = () => {
-    return (
-      <ul className="navbar-nav ml-auto">
-        <li className="nav-item active">
-          <a className="nav-link text-white hover-effect" href="#">
-            Inicio
+const NavLinks = ({linksData}) => {
+  return (
+    <ul className="navbar-nav ml-auto px-3">
+      {linksData.map((link, index) => (
+        <li key={index} className="nav-item">
+          <a className="nav-link text-white hover-effect" href={link.href}>
+            {link.name}
           </a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link text-white hover-effect" href="#">
-            Productos
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link text-white hover-effect" href="#">
-            Contacto
-          </a>
-        </li>
-      </ul>
-    );
-  };
+      ))}
+    </ul>
+  );
+};
 
 export default NavLinks;

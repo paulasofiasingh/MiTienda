@@ -1,5 +1,6 @@
 import React from 'react';
 import NavLinks from './navLinks';
+import linksData from '@/app/data/linksData';
 
 const Navbar = () => {
     return (
@@ -16,7 +17,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <NavLinks />
+          <NavLinks linksData = {linksData}/>
         </div>
       </nav>
     );
