@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import AboutUs from '../molecules/AboutUs';
+import SocialLinks from '../molecules/SocialLinks';
+import LinksList from '../molecules/LinkList';
 
 const Footer = () => {
   return (
@@ -8,24 +10,13 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-4 mb-3">
-            <h5 className="font-weight-bold">Sobre Nosotros</h5>
-            <p>Ofrecemos una amplia variedad de productos de alta calidad y un servicio excepcional para nuestros clientes.</p>
+            <AboutUs />
           </div>
           <div className="col-md-4 mb-3">
-            <h5 className="font-weight-bold">Enlaces</h5>
-            <ul className="list-unstyled">
-              <li><a href="#" className="text-white text-decoration-none">Inicio</a></li>
-              <li><a href="#" className="text-white text-decoration-none">Productos</a></li>
-              <li><a href="#" className="text-white text-decoration-none">Contacto</a></li>
-            </ul>
+            <LinksList />
           </div>
           <div className="col-md-4 mb-3">
-            <h5 className="font-weight-bold">Seguinos</h5>
-            <div className="d-flex">
-              <a href="#" className="text-white me-3"><FaFacebook size={24} /></a>
-              <a href="#" className="text-white me-3"><FaInstagram size={24} /></a>
-              <a href="#" className="text-white"><FaTwitter size={24} /></a>
-            </div>
+            <SocialLinks />
           </div>
         </div>
         <div className="text-center mt-3">
